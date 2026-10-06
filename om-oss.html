@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Om oss – HGs</title>
+<meta name="description" content="Möt Gustaf Brandt och Henrik Esping i duon HGs från Ystad.">
+<meta property="og:title" content="Om oss – HGs">
+<meta property="og:description" content="Möt Gustaf Brandt och Henrik Esping i duon HGs från Ystad.">
+<meta property="og:image" content="https://www.hgmusik.se/assets/images/logo-rund.png">
+<link rel="icon" href="assets/images/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/images/logo-avlang.png" alt="HGs – Sveriges närmsta coverband (från Ystad räknat)"></a>
+<button class="burger" aria-label="Meny" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+<nav class="nav" id="nav">
+<a href="index.html">Hem</a><a href="om-oss.html" aria-current="page">Om oss</a><a href="galleri.html">Galleri</a><a href="spelningar.html">Spelningar</a><a href="kontakt.html">Kontakt</a>
+<a class="fb" href="https://www.facebook.com/profile.php?id=61587893577133" target="_blank" rel="noopener" aria-label="HGs på Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8s-1.4-.3-2.8-.3c-2.8 0-4.5 1.7-4.5 4.7v2.3H6.7v3.3h2.9V22z"/></svg></a>
+</nav></div></header>
+<main>
+
+<section class="page-title"><div class="wrap"><span class="eyebrow">Om oss</span><h1>HGs? Vem är det?</h1><p>Ett piano, en gitarr och ganska mycket allsång.</p></div></section>
+<section class="block"><div class="wrap">
+<div class="person"><div class="ph"><img src="assets/images/gustaf.jpg" alt="Gustaf Brandt" loading="lazy"></div>
+<div><span class="role">Piano &amp; sång</span><h2>Gustaf Brandt</h2>
+<p class="muted">Gustaf, som de flesta i Ystad och Skåne har hört talas om och lyssnat till, är en välkänd pianist och underhållare. Han briljerar inte bara på tangenterna, utan han är också en duktig sångare. Dessutom är han rolig!</p></div></div>
+<div class="person rev"><div class="ph"><img src="assets/images/henrik.jpg" alt="Henrik Esping" loading="lazy"></div>
+<div><span class="role">Gitarr &amp; sång</span><h2>Henrik Esping</h2>
+<p class="muted">Henrik spelar gitarr och sjunger.</p><p class="muted"><em>”Du är ganska duktig, faktiskt”</em>, som hans chef brukar säga.</p></div></div>
+<div class="center"><a class="btn" href="kontakt.html#boka">Boka HGs</a></div>
+</div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div>© 2026 HGs · <a href="spelningar.html">Spelningar</a> · <a href="kontakt.html">Kontakt</a></div>
+</div></footer>
+<script>
+/* Kontaktuppgifter skrivs ut som vanlig text (ej länkar) via JS för att minska spam. */
+document.querySelectorAll('[data-m]').forEach(function(e){{e.textContent=['info','hgmusik.se'].join('@')}});
+document.querySelectorAll('[data-t]').forEach(function(e){{e.textContent=['076','367 58 10'].join('-')}});
+</script>
+</body></html>

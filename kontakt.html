@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Kontakt & bokning – HGs</title>
+<meta name="description" content="Boka HGs för fest, julbord, årsmöte, musikquiz eller allsångsbingo. Se lediga datum och skicka en bokningsförfrågan.">
+<meta property="og:title" content="Kontakt & bokning – HGs">
+<meta property="og:description" content="Boka HGs för fest, julbord, årsmöte, musikquiz eller allsångsbingo. Se lediga datum och skicka en bokningsförfrågan.">
+<meta property="og:image" content="https://www.hgmusik.se/assets/images/logo-rund.png">
+<link rel="icon" href="assets/images/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/images/logo-avlang.png" alt="HGs – Sveriges närmsta coverband (från Ystad räknat)"></a>
+<button class="burger" aria-label="Meny" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+<nav class="nav" id="nav">
+<a href="index.html">Hem</a><a href="om-oss.html">Om oss</a><a href="galleri.html">Galleri</a><a href="spelningar.html">Spelningar</a><a href="kontakt.html" aria-current="page">Kontakt</a>
+<a class="fb" href="https://www.facebook.com/profile.php?id=61587893577133" target="_blank" rel="noopener" aria-label="HGs på Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8s-1.4-.3-2.8-.3c-2.8 0-4.5 1.7-4.5 4.7v2.3H6.7v3.3h2.9V22z"/></svg></a>
+</nav></div></header>
+<main>
+
+<section class="page-title"><div class="wrap"><span class="eyebrow">Kontakt</span><h1>Hör av dig så hittar vi på något!</h1><p>Fyll i formuläret så återkommer vi så fort vi kan. Kolla gärna <a href="spelningar.html">Spelningar</a> för lediga datum.</p></div></section>
+<section class="block" style="padding-top:2rem"><div class="wrap"><div class="info">
+<div class="card"><h3>SMS</h3><p data-t>Aktivera JavaScript eller använd formuläret</p></div>
+<div class="card"><h3>E-post</h3><p data-m>Använd formuläret nedan</p></div>
+<div class="card"><h3>Arbetstider</h3><p>Dagar, kvällar och nätter. Typ. Fast inte samtidigt.</p></div>
+</div></div></section>
+
+
+<section class="block" id="boka" style="padding-top:0"><div class="wrap">
+<span class="eyebrow">Bokning</span><h2>Skicka bokningsförfrågan</h2>
+<!-- Web3Forms: lägg in er access key i fältet access_key. Mottagaradressen (info@hgmusik.se) anges när nyckeln skapas på web3forms.com. -->
+<form class="booking" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="2639f150-51ee-4b49-9fd6-db0def233373">
+<input type="hidden" name="subject" value="Ny bokningsförfrågan via hgmusik.se">
+<input type="hidden" name="from_name" value="hgmusik.se">
+<input type="hidden" name="redirect" value="https://www.hgmusik.se/tack.html">
+<input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div><label for="namn">Namn</label><input id="namn" name="Namn" type="text" autocomplete="name" required></div>
+<div><label for="tel">Telefonnummer</label><input id="tel" name="Telefonnummer" type="tel" autocomplete="tel" required></div>
+<div><label for="mail">Mailadress</label><input id="mail" name="email" type="email" autocomplete="email" required></div>
+<div><label for="onskemal">Önskemål</label><select id="onskemal" name="Önskemål" required><option value="" disabled selected>Välj…</option><option>Musikkviss</option><option>Underhållning</option><option>Annat</option></select></div>
+<div class="full"><label for="info">Information om ditt önskemål</label><textarea id="info" name="Information" required placeholder="Datum, plats, antal gäster, typ av tillfälle…"></textarea></div>
+<div class="full"><label for="budget">Budget</label><input id="budget" name="Budget" type="text" inputmode="numeric" placeholder="t.ex. 5000 kr" required></div>
+<div class="full"><button class="btn" type="submit">Skicka bokningsförfrågan</button></div>
+</form>
+</div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<div>© 2026 HGs · <a href="spelningar.html">Spelningar</a> · <a href="kontakt.html">Kontakt</a></div>
+</div></footer>
+<script>
+/* Kontaktuppgifter skrivs ut som vanlig text (ej länkar) via JS för att minska spam. */
+document.querySelectorAll('[data-m]').forEach(function(e){{e.textContent=['info','hgmusik.se'].join('@')}});
+document.querySelectorAll('[data-t]').forEach(function(e){{e.textContent=['076','367 58 10'].join('-')}});
+</script>
+</body></html>
