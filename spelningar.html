@@ -9,6 +9,7 @@
 <meta property="og:title" content="Spelningar – HGs">
 <meta property="og:description" content="Se när HGs spelar och vilka datum som är lediga för bokning.">
 <meta property="og:image" content="https://www.hgmusik.se/assets/images/logo-rund.png">
+<link rel="canonical" href="https://www.hgmusik.se/spelningar">
 <link rel="icon" href="assets/images/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,10 +17,10 @@
 </head>
 <body>
 <header class="site-header"><div class="wrap">
-<a class="brand" href="index.html"><img src="assets/images/logo-avlang.png" alt="HGs – Sveriges närmsta coverband (från Ystad räknat)"></a>
+<a class="brand" href="/"><img src="assets/images/logo-avlang.png" alt="HGs – Sveriges närmsta coverband (från Ystad räknat)"></a>
 <button class="burger" aria-label="Meny" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
 <nav class="nav" id="nav">
-<a href="index.html">Hem</a><a href="om-oss.html">Om oss</a><a href="galleri.html">Galleri</a><a href="spelningar.html" aria-current="page">Spelningar</a><a href="kontakt.html">Kontakt</a>
+<a href="/">Hem</a><a href="om-oss">Om oss</a><a href="galleri">Galleri</a><a href="spelningar" aria-current="page">Spelningar</a><a href="kontakt">Kontakt</a>
 <a class="fb" href="https://www.facebook.com/profile.php?id=61587893577133" target="_blank" rel="noopener" aria-label="HGs på Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8s-1.4-.3-2.8-.3c-2.8 0-4.5 1.7-4.5 4.7v2.3H6.7v3.3h2.9V22z"/></svg></a>
 </nav></div></header>
 <main>
@@ -28,14 +29,14 @@
 
 
 <div class="cal"><iframe id="calframe" title="HGs kalender" loading="lazy" src="https://calendar.google.com/calendar/embed?src=henriktextochackord%40gmail.com&ctz=Europe%2FStockholm&hl=sv&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&showNav=1&bgcolor=%23ffffff&mode=MONTH" data-month="https://calendar.google.com/calendar/embed?src=henriktextochackord%40gmail.com&ctz=Europe%2FStockholm&hl=sv&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&showNav=1&bgcolor=%23ffffff&mode=MONTH" data-agenda="https://calendar.google.com/calendar/embed?src=henriktextochackord%40gmail.com&ctz=Europe%2FStockholm&hl=sv&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&showNav=1&bgcolor=%23ffffff&mode=AGENDA"></iframe></div>
-<p style="margin-top:1.5rem"><a class="btn" href="kontakt.html#boka">Skicka bokningsförfrågan</a></p>
+<p style="margin-top:1.5rem"><a class="btn" href="kontakt#boka">Skicka bokningsförfrågan</a></p>
 </div></section>
 <script>
 (function(){var f=document.getElementById('calframe');if(f&&innerWidth<640)f.src=f.dataset.agenda})();
 </script>
 </main>
 <footer class="site-footer"><div class="wrap">
-<div>© 2026 HGs · <a href="spelningar.html">Spelningar</a> · <a href="kontakt.html">Kontakt</a></div>
+<div>© 2026 HGs · <a href="spelningar">Spelningar</a> · <a href="kontakt">Kontakt</a></div>
 </div></footer>
 <script>
 /* Kontaktuppgifter skrivs ut som vanlig text (ej länkar) via JS för att minska spam. */
