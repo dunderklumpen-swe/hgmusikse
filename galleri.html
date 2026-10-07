@@ -25,11 +25,10 @@
 </nav></div></header>
 <main>
 
-<section class="page-title"><div class="wrap"><span class="eyebrow">Galleri</span><h1>Från scenen</h1><p>Det senaste från Instagram och foton från våra spelningar.</p></div></section>
-<section class="block" style="padding-top:2rem"><div class="wrap">
-<span class="eyebrow">Instagram</span>
+<section class="page-title"><div class="wrap"><h1>Galleri</h1><p>Det senaste från Instagram och foton från våra spelningar.</p></div></section>
+<section class="block" id="insta-section" style="padding:0;height:0;overflow:hidden"><div class="wrap">
 <h2>Senaste från Instagram</h2>
-<!-- Instagram-flöde via Behold (feed-id kopplas till kontot i behold.so) -->
+<!-- Instagram-flöde via Behold. Sektionen visas först när flödet har innehåll. -->
 <div id="instagram-feed" style="margin-top:1.5rem"><behold-widget feed-id="F9cFCOzjSP9YoluSex19"></behold-widget></div>
 <script>
   (() => {
@@ -37,10 +36,12 @@
     const d=document,s=d.createElement("script");s.type="module";
     s.src="https://w.behold.so/widget.js";setTimeout(()=>{d.head.append(s);},0);
   })();
+  (function(){var n=0,t=setInterval(function(){var w=document.querySelector('behold-widget');
+    if(w&&w.offsetHeight>80){var s=document.getElementById('insta-section');s.style.cssText='padding:1rem 0 0';clearInterval(t)}
+    else if(++n>40)clearInterval(t)},250)})();
 </script>
 </div></section>
-<section class="block" style="padding-top:0"><div class="wrap">
-<span class="eyebrow">Foton</span>
+<section class="block" style="padding:3rem 0 0"><div class="wrap">
 <h2>Från spelningarna</h2>
 <p class="muted" style="margin-bottom:1.5rem">Klicka på en bild för att förstora.</p>
 <div class="gallery"><a href="assets/images/galleri-5.jpg"><img src="assets/images/galleri-5.jpg" alt="HGs på scen med keyboard och gitarr" loading="lazy"></a><a href="assets/images/galleri-1.jpg"><img src="assets/images/galleri-1.jpg" alt="Duon i julskjortor" loading="lazy"></a><a href="assets/images/galleri-3.jpg"><img src="assets/images/galleri-3.jpg" alt="Gustaf vid pianot" loading="lazy"></a><a href="assets/images/galleri-4.jpg"><img src="assets/images/galleri-4.jpg" alt="Henrik sjunger och spelar gitarr" loading="lazy"></a><a href="assets/images/galleri-2.jpg"><img src="assets/images/galleri-2.jpg" alt="Spelning i julskjortor" loading="lazy"></a></div></div></section>
