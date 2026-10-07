@@ -15,16 +15,17 @@ p{margin:0 0 1em}
 /* header */
 .site-header{background:#38352ee8;backdrop-filter:blur(12px);position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line)}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.55rem 0}
-.brand img{height:54px;width:auto;border-radius:8px;display:block}
+.brand img{height:72px;width:auto;border-radius:10px;display:block}
 .nav{display:flex;align-items:center;gap:.2rem}
 .nav a{color:var(--muted);text-decoration:none;padding:.45rem .85rem;border-radius:8px;font-weight:500;font-size:.98rem;transition:.2s}
 .nav a:hover{color:var(--text)}
 .nav a[aria-current=page]{color:var(--text);background:var(--surface-2)}
-.nav .fb{display:grid;place-items:center;width:38px;height:38px;padding:0}
-.nav .fb svg{width:18px;height:18px;fill:currentColor}
+.nav .fb{display:grid;place-items:center;width:42px;height:42px;padding:0;color:var(--text)}
+.nav .fb svg{width:23px;height:23px;fill:currentColor}
+.nav .fb:hover{color:var(--accent)}
 .burger{display:none;background:none;border:0;color:var(--text);font-size:1.6rem;cursor:pointer;padding:.2rem .6rem}
 @media(max-width:720px){
- .brand img{height:44px}
+ .brand img{height:54px}
  .burger{display:block}
  .nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:.5rem 1.25rem 1rem}
  .nav.open{display:flex}
@@ -95,3 +96,9 @@ form.booking{background:var(--surface);border:1px solid var(--line);border-radiu
 /* footer */
 .site-footer{border-top:1px solid var(--line);color:var(--muted);padding:2rem 0;font-size:.92rem}
 .site-footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
+
+.follow{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap}
+.follow span{color:var(--text);font-weight:600}
+.follow a{display:inline-flex;align-items:center;gap:.45rem;color:var(--muted);text-decoration:none}
+.follow a:hover{color:var(--accent)}
+.follow svg{width:18px;height:18px;fill:currentColor}
