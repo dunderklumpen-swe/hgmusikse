@@ -25,14 +25,25 @@
 </nav></div></header>
 <main>
 
-<section class="page-title"><div class="wrap"><span class="eyebrow">Galleri</span><h1>Från scenen</h1><p>Klicka på en bild för att förstora.</p></div></section>
-<section class="block" style="padding-top:2rem"><div class="wrap"><div class="gallery"><a href="assets/images/galleri-5.jpg"><img src="assets/images/galleri-5.jpg" alt="HGs på scen med keyboard och gitarr" loading="lazy"></a><a href="assets/images/galleri-1.jpg"><img src="assets/images/galleri-1.jpg" alt="Duon i julskjortor" loading="lazy"></a><a href="assets/images/galleri-3.jpg"><img src="assets/images/galleri-3.jpg" alt="Gustaf vid pianot" loading="lazy"></a><a href="assets/images/galleri-4.jpg"><img src="assets/images/galleri-4.jpg" alt="Henrik sjunger och spelar gitarr" loading="lazy"></a><a href="assets/images/galleri-2.jpg"><img src="assets/images/galleri-2.jpg" alt="Spelning i julskjortor" loading="lazy"></a></div></div></section>
-<section class="block" style="padding-top:0"><div class="wrap">
+<section class="page-title"><div class="wrap"><span class="eyebrow">Galleri</span><h1>Från scenen</h1><p>Det senaste från Instagram och foton från våra spelningar.</p></div></section>
+<section class="block" style="padding-top:2rem"><div class="wrap">
 <span class="eyebrow">Instagram</span>
 <h2>Senaste från Instagram</h2>
-<!-- INSTAGRAM-FLÖDE: klistra in embed-koden från er flödestjänst (t.ex. Behold, Elfsight, SnapWidget eller Curator.io) inuti diven nedan, i stället för platshållartexten. -->
-<div id="instagram-feed" class="insta"><p style="margin:0">Instagram-flödet visas här när det är kopplat.</p></div>
+<!-- Instagram-flöde via Behold (feed-id kopplas till kontot i behold.so) -->
+<div id="instagram-feed" style="margin-top:1.5rem"><behold-widget feed-id="F9cFCOzjSP9YoluSex19"></behold-widget></div>
+<script>
+  (() => {
+    if(window.__bhldScript)return;window.__bhldScript=true;
+    const d=document,s=d.createElement("script");s.type="module";
+    s.src="https://w.behold.so/widget.js";setTimeout(()=>{d.head.append(s);},0);
+  })();
+</script>
 </div></section>
+<section class="block" style="padding-top:0"><div class="wrap">
+<span class="eyebrow">Foton</span>
+<h2>Från spelningarna</h2>
+<p class="muted" style="margin-bottom:1.5rem">Klicka på en bild för att förstora.</p>
+<div class="gallery"><a href="assets/images/galleri-5.jpg"><img src="assets/images/galleri-5.jpg" alt="HGs på scen med keyboard och gitarr" loading="lazy"></a><a href="assets/images/galleri-1.jpg"><img src="assets/images/galleri-1.jpg" alt="Duon i julskjortor" loading="lazy"></a><a href="assets/images/galleri-3.jpg"><img src="assets/images/galleri-3.jpg" alt="Gustaf vid pianot" loading="lazy"></a><a href="assets/images/galleri-4.jpg"><img src="assets/images/galleri-4.jpg" alt="Henrik sjunger och spelar gitarr" loading="lazy"></a><a href="assets/images/galleri-2.jpg"><img src="assets/images/galleri-2.jpg" alt="Spelning i julskjortor" loading="lazy"></a></div></div></section>
 <div class="lb" id="lb"><img alt=""></div>
 <script>
 const lb=document.getElementById('lb'),li=lb.querySelector('img');
